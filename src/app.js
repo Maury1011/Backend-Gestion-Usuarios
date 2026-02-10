@@ -8,7 +8,6 @@ import "./models/User.js";
 import "./models/Task.js";
 
 
-
 const app = express();
 
 app.use(cors());
