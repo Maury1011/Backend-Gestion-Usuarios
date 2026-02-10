@@ -16,7 +16,7 @@ export const sequelize = new Sequelize(
             freezeTableName: true
         },
         dialectOptions: {
-            ssl: process.env.DB_SSL === 'production' ? {
+            ssl: process.env.NODE_ENV === 'production' ? {
                 require: true,
                 rejectUnauthorized: false
             } : false
