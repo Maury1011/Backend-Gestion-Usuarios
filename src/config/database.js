@@ -16,10 +16,10 @@ export const sequelize = new Sequelize(
             freezeTableName: true
         },
         dialectOptions: {
-            ssl: {
+            ssl: process.env.DB_SSL === 'production' ? {
                 require: true,
                 rejectUnauthorized: false
-            }
+            } : false
         }
     }
 );
