@@ -4,6 +4,10 @@ import cors from 'cors';
 import taskRoutes from './routes/task.routes.js';
 import { errorHandler } from './middlewares/error.middleware.js';
 import authRoutes from './routes/auth.routes.js';
+import "./models/User.js";
+import "./models/Task.js";
+
+
 
 const app = express();
 
