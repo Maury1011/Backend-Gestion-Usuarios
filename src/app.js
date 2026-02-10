@@ -16,6 +16,10 @@ app.use(express.json());
 app.use(authRoutes);
 
 app.use('/tasks', taskRoutes);
+app.get("/", (req, res) => {
+    res.send("API funcionando correctamente 🚀");
+});
+
 
 
 app.use(errorHandler); //siempre al final
